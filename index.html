@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Stopwatch</title>
   <link rel="stylesheet" href="./css/stopwatch.css">
+  <link rel="stylesheet" href="./css/stopwatch-alfa.css">
+  <!-- <link rel="stylesheet" href="./css/stopwatch-beta.css"> -->
+  <!-- <link rel="stylesheet" href="./css/stopwatch-gamma.css"> -->
 </head>
 
 <body>
@@ -32,7 +35,7 @@
       <span class="stopwatch__axis"></span>
       <span class="stopwatch__secondhand"></span>
 
-      <div class="stopwatch__digits">
+      <div class="stopwatch__digits stopwatch__digits--alfa">
         <div class="stopwatch__digit m--tens">0</div>
         <div class="stopwatch__digit m--singles">0</div><span>:</span>
         <div class="stopwatch__digit s--tens">0</div>
@@ -40,6 +43,39 @@
         <div class="stopwatch__digit ms--tens">0</div>
         <div class="stopwatch__digit ms--singles">0</div>
       </div>
+
+      <div class="stopwatch__digits stopwatch__digits--beta">
+        <div class="stopwatch__digit stopwatch__tens m--tens"></div>
+        <div class="stopwatch__digit stopwatch__singles m--singles"></div><span>:</span>
+        <div class="stopwatch__digit stopwatch__tens s--tens"></div>
+        <div class="stopwatch__digit stopwatch__singles s--singles"></div><span>,</span>
+        <div class="stopwatch__digit stopwatch__singles ms--tens"></div>
+        <div class="stopwatch__digit stopwatch__singles ms--singles"></div>
+      </div>
+
+      <div class="stopwatch__digits stopwatch__digits--gamma">
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number m--tens">0 1 2 3 4 5</div>
+        </div>
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number m--singles">0 1 2 3 4 5 6 7 8 9</div>
+        </div>
+        <span>:</span>
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number s--tens">0 1 2 3 4 5</div>
+        </div>
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number s--singles">0 1 2 3 4 5 6 7 8 9</div>
+        </div>
+        <span>,</span>
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number ms--tens">0 1 2 3 4 5 6 7 8 9</div>
+        </div>
+        <div class="stopwatch__digit">
+          <div class="stopwatch__number ms--singles">0 1 2 3 4 5 6 7 8 9</div>
+        </div>
+      </div>
+
     </div>
 
     <div class="stopwatch__controls">

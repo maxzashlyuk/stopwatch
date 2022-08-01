@@ -1,0 +1,28 @@
+
+:root {
+  --beta: flex;
+}
+
+/* #region Stopwatch styles */
+
+.stopwatch__digit {
+  display: inline-block;
+  height: 2.5vmin;
+  overflow: hidden;
+}
+
+.stopwatch__digit:after {
+  display: inline-block;
+  white-space: pre;
+  animation: var(--name, none) var(--duration) infinite steps(var(--steps)) var(--state);
+}
+
+.stopwatch__tens::after {
+  content: "0\A 1\A 2\A 3\A 4\A 5";
+}
+
+.stopwatch__singles::after {
+  content: "0\A 1\A 2\A 3\A 4\A 5\A 6\A 7\A 8\A 9";
+}
+
+/* #endregion */

@@ -1,0 +1,20 @@
+
+:root {
+  --gamma: flex;
+}
+
+/* #region Stopwatch styles */
+
+.stopwatch__digit {
+  display: inline-block;
+  height: 2.5vmin;
+  text-align: center;
+  overflow: hidden;
+}
+
+.stopwatch__number {
+  width: 1ch;
+  animation: var(--name, none) var(--duration) infinite steps(var(--steps)) var(--state);
+}
+
+/* #endregion */
