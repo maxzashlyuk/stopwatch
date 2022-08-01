@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="./css/stopwatch.css">
+</head>
+
+<body>
+
+  <form class="stopwatch">
+    <input id="start" type="checkbox" />
+    <input id="pause" type="checkbox" />
+    <div class="stopwatch__content">
+
+      <span class="stopwatch__face" style="--face-deg: 30deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 60deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 90deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 120deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 150deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 180deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 210deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 240deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 270deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 300deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 330deg"></span>
+      <span class="stopwatch__face" style="--face-deg: 360deg"></span>
+
+      <span class="stopwatch__axis"></span>
+      <span class="stopwatch__secondhand"></span>
+
+      <div class="stopwatch__digits">
+        <div class="stopwatch__digit">0</div>
+        <div class="stopwatch__digit">0</div><span>:</span>
+        <div class="stopwatch__digit">0</div>
+        <div class="stopwatch__digit">0</div><span>,</span>
+        <div class="stopwatch__digit">0</div>
+        <div class="stopwatch__digit">0</div>
+      </div>
+    </div>
+
+    <div class="stopwatch__controls">
+
+      <button class="stopwatch__control" type="reset">
+        Reset
+      </button>
+      <label class="stopwatch__control stopwatch__start" for="start">
+        Start
+      </label>
+      <label class="stopwatch__control stopwatch__pause" for="pause">
+        Stop
+      </label>
+      <label class="stopwatch__control stopwatch__resume" for="pause">
+        Resume
+      </label>
+
+    </div>
+
+  </form>
+
+</body>
+
+</html>
